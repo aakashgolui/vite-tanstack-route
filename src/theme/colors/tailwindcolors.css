@@ -1,0 +1,34 @@
+@theme {
+    --color-*: initial;
+    /* === Primary === */
+    --color-primary-50: oklch(0.973 0.033 264.18);
+    --color-primary-100: oklch(0.947 0.056 261.18);
+    --color-primary-200: oklch(0.914 0.082 260.16);
+    --color-primary-300: oklch(0.874 0.107 260.21);
+    --color-primary-400: oklch(0.836 0.132 259.76);
+    --color-primary-500: oklch(0.796 0.153 259.54);
+    --color-primary-600: oklch(0.756 0.152 259.43);
+    --color-primary-700: oklch(0.715 0.141 259.24);
+    --color-primary-800: oklch(0.666 0.124 259.37);
+    --color-primary-900: oklch(0.624 0.106 259.35);
+
+    /* === Neutral Black === */
+    --color-neutral-black-50: oklch(0.175 0.03 270);
+    --color-neutral-black-100: oklch(0.235 0.022 260);
+    --color-neutral-black-200: oklch(0.3 0.018 255);
+    --color-neutral-black-300: oklch(0.365 0.015 250);
+    --color-neutral-black-400: oklch(0.435 0.013 245);
+    --color-neutral-black-500: oklch(0.505 0.011 240);
+    --color-neutral-black-600: oklch(0.575 0.01 235);
+    --color-neutral-black-700: oklch(0.71 0.008 230);
+    --color-neutral-black-800: oklch(0.88 0.006 225);
+    --color-neutral-black-900: oklch(0.97 0.004 220);
+
+    /* === Neutral White === */
+    --color-neutral-white-50: oklch(1 0 0);
+    /* #FFFFFF */
+    --color-neutral-white-100: oklch(0.98 0.005 255);
+    /* #F6F6F6 */
+    --color-neutral-white-200: oklch(0.94 0.01 250);
+    /* #E9E9EB */
+}
