@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.root {
+    @apply px-[20px] md:!px-[70px] xl:!px-[100px];
+}
