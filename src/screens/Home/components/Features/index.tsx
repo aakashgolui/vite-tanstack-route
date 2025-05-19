@@ -1,5 +1,7 @@
 import { Grid, Image, Stack, Text, Title } from "@mantine/core"
+
 import { Container } from "@/ui"
+
 import freeShipping from "/images/home/freeShipping.png"
 import satisfactionGuarantee from "/images/home/satisfactionGuarantee.png"
 import securePayment from "/images/home/securePayment.png"
@@ -32,7 +34,7 @@ export const Features = () => {
     <Container className="!py-[50px]">
       <Grid>
         {features.map((feature) => (
-          <Grid.Col span={4} p="xl">
+          <Grid.Col key={feature.id} span={4} p="xl">
             <Stack gap="md">
               <Image
                 src={feature.img}
