@@ -1,4 +1,3 @@
-import { Container, TextInput } from "@/ui"
 import { ActionIcon, Flex, Group, Image, Text } from "@mantine/core"
 import { Link } from "@tanstack/react-router"
 import fullLogo from "/images/logos/logo-full.png"
@@ -7,6 +6,7 @@ import {
   IconShoppingCart,
   IconUserCircle,
 } from "@tabler/icons-react"
+import { Container, TextInput } from "@/ui"
 
 export const Header = () => {
   return (

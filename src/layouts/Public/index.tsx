@@ -1,5 +1,6 @@
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import { Suspense, type FC } from 'react'
+import {  Suspense } from 'react'
+import type {FC} from 'react';
 import { Header } from '@/components'
 import { AppShell } from '@/ui/AppShell'
 

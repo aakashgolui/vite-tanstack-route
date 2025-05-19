@@ -1,7 +1,7 @@
-import { Container } from "@/ui"
-import { Text, Flex, Title, Button, Image } from "@mantine/core"
+import { Button, Flex, Image, Text, Title } from "@mantine/core"
 import { IconArrowRight } from "@tabler/icons-react"
 import type { FC } from "react"
+import { Container } from "@/ui"
 import heroBannerImage from "/images/home/hero-banner.png"
 
 export const HeroBanner: FC = () => {

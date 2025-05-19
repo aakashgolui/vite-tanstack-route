@@ -1,5 +1,5 @@
+import { Grid, Image, Stack, Text, Title } from "@mantine/core"
 import { Container } from "@/ui"
-import { Grid, Image, Stack, Title, Text } from "@mantine/core"
 import freeShipping from "/images/home/freeShipping.png"
 import satisfactionGuarantee from "/images/home/satisfactionGuarantee.png"
 import securePayment from "/images/home/securePayment.png"
