@@ -25,14 +25,19 @@ export const Header = () => {
       </Flex>
       <Container h={{ base: "30px", md: "84px" }}>
         <nav className="flex h-[100%] items-center justify-between bg-neutral-white-50">
-          <Image src={fullLogo} fit="contain" className="!w-[150px]" />
+          <Image
+            src={fullLogo}
+            alt="main logo"
+            fit="contain"
+            className="!w-[150px]"
+          />
           <Group className="text-neutral-black-500 font-semibold">
             <Link to="/">Home</Link>
             <Link to="/">Categories</Link>
             <Link to="/">About</Link>
             <Link to="/">Contact</Link>
           </Group>
-          <Group>
+          <Group gap="xs">
             <TextInput
               placeholder="Search products"
               leftSection={<IconSearch size={16} />}

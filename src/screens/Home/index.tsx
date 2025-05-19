@@ -1,3 +1,10 @@
+import { Features, HeroBanner } from "./components"
+
 export const HomeScreen = () => {
-  return <h1>Home</h1>
+  return (
+    <>
+      <HeroBanner />
+      <Features />
+    </>
+  )
 }
