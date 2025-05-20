@@ -1,9 +1,10 @@
-import {
-  TextInput as MantineTextInput
-  
-} from "@mantine/core"
-import type {TextInputProps} from "@mantine/core";
+import type { TextInputProps } from "@mantine/core";
 
-export const TextInput = (props: TextInputProps) => (
-  <MantineTextInput {...props} />
-)
+import {
+  TextInput as MantineTextInput,
+
+} from "@mantine/core";
+
+export function TextInput(props: TextInputProps) {
+  return <MantineTextInput {...props} />;
+}

@@ -1,8 +1,11 @@
-import { Button, Flex, Image, Text, Title } from "@mantine/core"
-import { IconArrowRight } from "@tabler/icons-react"
-import type { FC } from "react"
-import { Container } from "@/ui"
-import heroBannerImage from "/images/home/hero-banner.png"
+import type { FC } from "react";
+
+import { Button, Flex, Image, Text, Title } from "@mantine/core";
+import { IconArrowRight } from "@tabler/icons-react";
+
+import { Container } from "@/ui";
+
+import heroBannerImage from "/images/home/hero-banner.png";
 
 export const HeroBanner: FC = () => {
   return (
@@ -29,5 +32,5 @@ export const HeroBanner: FC = () => {
         </Flex>
       </Container>
     </Flex>
-  )
-}
+  );
+};

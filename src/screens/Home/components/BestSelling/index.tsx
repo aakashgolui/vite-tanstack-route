@@ -1,13 +1,13 @@
-import { Box, Grid, Group, Image, Stack, Text, Title } from "@mantine/core"
+import { Box, Grid, Group, Image, Stack, Text, Title } from "@mantine/core";
 
-import { Badge, Container } from "@/ui"
+import { Badge, Container } from "@/ui";
 
-import product1 from "/images/home/products/product-1.png"
-import product2 from "/images/home/products/product-2.png"
-import product3 from "/images/home/products/product-3.png"
-import product4 from "/images/home/products/product-4.png"
+import product1 from "/images/home/products/product-1.png";
+import product2 from "/images/home/products/product-2.png";
+import product3 from "/images/home/products/product-3.png";
+import product4 from "/images/home/products/product-4.png";
 
-export const BestSelling = () => {
+export function BestSelling() {
   const products = [
     {
       id: 1,
@@ -41,7 +41,7 @@ export const BestSelling = () => {
       currencySymbol: "$",
       isInStock: true,
     },
-  ]
+  ];
 
   return (
     <Container className="!py-[50px]">
@@ -49,7 +49,7 @@ export const BestSelling = () => {
         Best Selling
       </Title>
       <Grid>
-        {products.map((product) => (
+        {products.map(product => (
           <Grid.Col
             key={product.id}
             span={3}
@@ -91,5 +91,5 @@ export const BestSelling = () => {
         ))}
       </Grid>
     </Container>
-  )
+  );
 }

@@ -1,21 +1,23 @@
-import { ActionIcon, Flex, Group, Image, Text } from "@mantine/core"
-import { Link } from "@tanstack/react-router"
-import fullLogo from "/images/logos/logo-full.png"
+import { ActionIcon, Flex, Group, Image, Text } from "@mantine/core";
 import {
   IconSearch,
   IconShoppingCart,
   IconUserCircle,
-} from "@tabler/icons-react"
-import { Container, TextInput } from "@/ui"
+} from "@tabler/icons-react";
+import { Link } from "@tanstack/react-router";
 
-export const Header = () => {
+import { Container, TextInput } from "@/ui";
+
+import fullLogo from "/images/logos/logo-full.png";
+
+export function Header() {
   return (
     <header>
       <Flex
         h="40px"
-        justify={"center"}
-        align={"center"}
-        gap={"md"}
+        justify="center"
+        align="center"
+        gap="md"
         className="bg-neutral-black-50 text-neutral-white-50"
       >
         <Text>Get 25% OFF on your first order</Text>
@@ -41,11 +43,11 @@ export const Header = () => {
             <TextInput
               placeholder="Search products"
               leftSection={<IconSearch size={16} />}
-              fw={"bold"}
+              fw="bold"
             />
             <ActionIcon
               variant="white"
-              size={"xl"}
+              size="xl"
               c="neutral-black.5"
               radius="xl"
             >
@@ -53,7 +55,7 @@ export const Header = () => {
             </ActionIcon>
             <ActionIcon
               variant="white"
-              size={"xl"}
+              size="xl"
               c="neutral-black.5"
               radius="xl"
             >
@@ -63,5 +65,5 @@ export const Header = () => {
         </nav>
       </Container>
     </header>
-  )
+  );
 }

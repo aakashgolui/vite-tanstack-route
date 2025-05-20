@@ -1,8 +1,8 @@
-import { Title, VisuallyHidden } from "@mantine/core"
+import { Title, VisuallyHidden } from "@mantine/core";
 
-import { BestSelling, Features, HeroBanner } from "./components"
+import { BestSelling, Features, HeroBanner } from "./components";
 
-export const HomeScreen = () => {
+export function HomeScreen() {
   return (
     <>
       <VisuallyHidden>
@@ -12,5 +12,5 @@ export const HomeScreen = () => {
       <Features />
       <BestSelling />
     </>
-  )
+  );
 }

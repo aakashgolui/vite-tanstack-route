@@ -1,12 +1,12 @@
-import { Grid, Image, Stack, Text, Title } from "@mantine/core"
+import { Grid, Image, Stack, Text, Title } from "@mantine/core";
 
-import { Container } from "@/ui"
+import { Container } from "@/ui";
 
-import freeShipping from "/images/home/freeShipping.png"
-import satisfactionGuarantee from "/images/home/satisfactionGuarantee.png"
-import securePayment from "/images/home/securePayment.png"
+import freeShipping from "/images/home/freeShipping.png";
+import satisfactionGuarantee from "/images/home/satisfactionGuarantee.png";
+import securePayment from "/images/home/securePayment.png";
 
-export const Features = () => {
+export function Features() {
   const features = [
     {
       id: 1,
@@ -29,11 +29,11 @@ export const Features = () => {
       description:
         "Your security is our priority. Your payments are secure with us.",
     },
-  ]
+  ];
   return (
     <Container className="!py-[50px]">
       <Grid>
-        {features.map((feature) => (
+        {features.map(feature => (
           <Grid.Col key={feature.id} span={4} p="xl">
             <Stack gap="md">
               <Image
@@ -54,5 +54,5 @@ export const Features = () => {
         ))}
       </Grid>
     </Container>
-  )
+  );
 }
