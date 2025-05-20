@@ -1,9 +1,11 @@
-import { MantineProvider } from "@mantine/core"
-import { Outlet, createRootRoute } from "@tanstack/react-router"
-import { PublicLayout } from "@/layouts"
+import { MantineProvider } from "@mantine/core";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 
-import "@mantine/core/styles.css"
-import { theme } from "@/theme"
+import { PublicLayout } from "@/layouts";
+
+import "@mantine/core/styles.css";
+
+import { theme } from "@/theme";
 
 export const Route = createRootRoute({
   component: () => (
@@ -13,4 +15,4 @@ export const Route = createRootRoute({
       </PublicLayout>
     </MantineProvider>
   ),
-})
+});

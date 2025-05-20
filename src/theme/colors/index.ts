@@ -1,1 +1,1 @@
-export * from "./mantineColors"
+export * from "./mantineColors";

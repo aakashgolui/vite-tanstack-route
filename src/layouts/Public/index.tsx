@@ -1,7 +1,10 @@
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import { Suspense, type FC } from 'react'
-import { Header } from '@/components'
-import { AppShell } from '@/ui/AppShell'
+import type { FC } from "react";
+
+import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
+import { Suspense } from "react";
+
+import { Header } from "@/components";
+import { AppShell } from "@/ui/AppShell";
 
 export const PublicLayout: FC<{ children: React.ReactNode }> = ({
   children,
@@ -22,5 +25,5 @@ export const PublicLayout: FC<{ children: React.ReactNode }> = ({
         </Suspense>
       </AppShell.Main>
     </AppShell>
-  )
-}
+  );
+};

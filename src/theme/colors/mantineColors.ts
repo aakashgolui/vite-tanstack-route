@@ -1,5 +1,5 @@
 export const MANTINE_COLORS = {
-  primary: [
+  "primary": [
     "#4078FF",
     "#5C83FF",
     "#728FFF",
@@ -35,4 +35,4 @@ export const MANTINE_COLORS = {
     "#DADADB",
     "#D5D5D6",
   ],
-} as const
+} as const;
