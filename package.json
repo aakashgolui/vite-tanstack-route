@@ -11,7 +11,8 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier",
-    "check": "prettier --write . && eslint --fix"
+    "check": "prettier --write . && eslint --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mantine/core": "^8.0.1",
@@ -37,6 +38,7 @@
     "eslint": "^9.27.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "husky": "^9.1.7",
     "jsdom": "^26.0.0",
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "^1.17.0",
