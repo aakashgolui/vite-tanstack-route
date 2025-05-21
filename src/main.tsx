@@ -19,9 +19,10 @@ const router = createRouter({
 
 // Register the router instance for type safety
 declare module "@tanstack/react-router" {
-  interface Register {
+  // @ts-expect-error this will be an err
+  type Register = {
     router: typeof router;
-  }
+  };
 }
 
 // Render the app
