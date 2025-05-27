@@ -26,10 +26,10 @@ export const BrowserYourFashion: FC = () => {
                     </Stack>
                     <Box>
                         <motion.img
-                            whileHover={{ scale: 1.1 }}
+                            whileInView={{ scale: 1.1 }}
                             transition={{
                                 duration: 0.5,
-                                ease: [0, 0.71, 0.2, 1.01],
+                                ease: "backInOut",
                             }}
                             src={browseYourFashion}
                             alt="Browser-Your-Fashion"

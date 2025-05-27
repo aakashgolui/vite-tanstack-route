@@ -1,7 +1,8 @@
 import type { FC } from "react";
 
-import { Button, Flex, Image, Text, Title } from "@mantine/core";
+import { Button, Flex, Text, Title } from "@mantine/core";
 import { IconArrowRight } from "@tabler/icons-react";
+import { motion } from "motion/react";
 
 import { Container } from "@/ui";
 
@@ -28,7 +29,12 @@ export const HeroBanner: FC = () => {
           </Button>
         </Flex>
         <Flex justify="flex-end" align="flex-end">
-          <Image src={heroBannerImage} alt="hero banner image" />
+          <motion.img
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            src={heroBannerImage}
+            alt="hero banner image"
+          />
         </Flex>
       </Container>
     </Flex>
