@@ -1,4 +1,5 @@
-import { Box, Grid, Group, Image, Stack, Text, Title } from "@mantine/core";
+import { Box, Grid, Group, Text, Title } from "@mantine/core";
+import { motion } from "motion/react";
 
 import { Badge, Container } from "@/ui";
 
@@ -56,22 +57,23 @@ export function BestSelling() {
             p="xl"
             className={`${product.isInStock ? "opacity-100 cursor-pointer" : "opacity-60 cursor-not-allowed"}`}
           >
-            <Stack gap="md">
+            <motion.div className="flex-col" whileTap={{ scale: 1.09 }}>
               <Box className="h-[312px] bg-neutral-white-100">
-                <Image
+                <motion.img
                   src={product.img}
                   alt={product.name}
-                  fit="contain"
-                  w="100%"
-                  h="100%"
+                  style={{ objectFit: "contain" }}
+                  whileHover={{ scale: 1.09 }}
+                  width="100%"
+                  height="100%"
                 />
               </Box>
 
-              <Title order={6} c="neutral-black.2">
+              <Title order={6} c="neutral-black.2" mt="md">
                 {product.name}
               </Title>
 
-              <Group>
+              <Group mt="xs">
                 <Badge
                   variant="outline"
                   p="sm"
@@ -86,7 +88,7 @@ export function BestSelling() {
                   {product.price}
                 </Text>
               </Group>
-            </Stack>
+            </motion.div>
           </Grid.Col>
         ))}
       </Grid>

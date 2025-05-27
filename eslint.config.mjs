@@ -1,6 +1,4 @@
-//  @ts-check
-
-// export default [...tanstackConfig];
+// @ts-nocheck
 
 import antfu from "@antfu/eslint-config";
 
@@ -38,6 +36,9 @@ export default antfu(
         },
       ],
       "eslint-comments/no-unlimited-disable": "off",
+      "antfu/top-level-function": "off",
+      "style/indent": "off",
+      "style/jsx-indent-props": "off",
     },
   },
 );
