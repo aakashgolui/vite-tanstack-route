@@ -1,16 +1,16 @@
-import { Grid, Title } from "@mantine/core";
+import { Flex, Grid } from "@mantine/core";
 
 import type { ProductListItem } from "@/types";
 
 import { CURRENCY } from "@/types";
-import { Container, ProductCard } from "@/ui";
+import { Badge, Container, ProductCard } from "@/ui";
 
-import product1 from "/images/home/products/product-1.png";
-import product2 from "/images/home/products/product-2.png";
-import product3 from "/images/home/products/product-3.png";
-import product4 from "/images/home/products/product-4.png";
+import product1 from "/images/home/products/product-5.png";
+import product2 from "/images/home/products/product-6.png";
+import product3 from "/images/home/products/product-7.png";
+import product4 from "/images/home/products/product-8.png";
 
-export function BestSelling() {
+export function ProductList() {
   const products: ProductListItem[] = [
     {
       id: "bkjbk",
@@ -60,9 +60,23 @@ export function BestSelling() {
 
   return (
     <Container className="!py-[50px]">
-      <Title order={4} className="text-center" mb="xl" c="neutral-black.2">
-        Best Selling
-      </Title>
+      <Flex mb="xl" justify="center" align="center" gap="sm">
+        <Badge
+          variant="outline"
+          p="sm"
+          c="neutral-black.2"
+          className="!border-neutral-white-200"
+        >
+          Featured
+        </Badge>
+        <Badge
+          variant="transparent"
+          p="sm"
+          c="neutral-black.2"
+        >
+          Latest
+        </Badge>
+      </Flex>
       <Grid>
         {products.map(product => (
           <Grid.Col

@@ -1,6 +1,6 @@
 import { Title, VisuallyHidden } from "@mantine/core";
 
-import { BestSelling, BrowserYourFashion, Features, HeroBanner } from "./components";
+import { BestSelling, BrowserYourFashion, Features, HeroBanner, ProductList } from "./components";
 
 export function HomeScreen() {
   return (
@@ -12,6 +12,7 @@ export function HomeScreen() {
       <Features />
       <BestSelling />
       <BrowserYourFashion />
+      <ProductList />
     </>
   );
 }
