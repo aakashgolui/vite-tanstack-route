@@ -57,7 +57,7 @@ export function BestSelling() {
             p="xl"
             className={`${product.isInStock ? "opacity-100 cursor-pointer" : "opacity-60 cursor-not-allowed"}`}
           >
-            <motion.div className="flex-col" whileTap={{ scale: 1.09 }} whileHover={{ scale: 1.1, rotate: "1deg" }}>
+            <motion.div className="flex-col" whileTap={{ scale: 1.09 }}>
               <Box className="h-[312px] bg-neutral-white-100">
                 <motion.img
                   src={product.img}
