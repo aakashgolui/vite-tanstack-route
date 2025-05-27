@@ -26,7 +26,8 @@ export const BrowserYourFashion: FC = () => {
                     </Stack>
                     <Box>
                         <motion.img
-                            whileHover={{ scale: 1.1 }}
+                            initial={{ x: 100, scale: 0.5 }}
+                            whileInView={{ x: 0, scale: 1 }}
                             transition={{
                                 duration: 0.5,
                                 ease: [0, 0.71, 0.2, 1.01],
