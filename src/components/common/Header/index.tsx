@@ -35,9 +35,9 @@ export function Header() {
           />
           <Group className="text-neutral-black-500 font-semibold">
             <Link to="/">Home</Link>
-            <Link to="/">Categories</Link>
-            <Link to="/">About</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/categories">Categories</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </Group>
           <Group gap="xs">
             <TextInput

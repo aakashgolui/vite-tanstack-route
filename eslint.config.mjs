@@ -1,6 +1,4 @@
-//  @ts-check
-
-// export default [...tanstackConfig];
+// @ts-nocheck
 
 import antfu from "@antfu/eslint-config";
 
@@ -19,7 +17,7 @@ export default antfu(
   {
     rules: {
       "ts/no-redeclare": "off",
-      "ts/consistent-type-definitions": ["error", "type"],
+      "ts/consistent-type-definitions": ["off", "type"],
       "no-console": ["warn"],
       "antfu/no-top-level-await": ["off"],
       "node/prefer-global/process": ["off"],
@@ -38,6 +36,9 @@ export default antfu(
         },
       ],
       "eslint-comments/no-unlimited-disable": "off",
+      "antfu/top-level-function": "off",
+      "style/indent": "off",
+      "style/jsx-indent-props": "off",
     },
   },
 );

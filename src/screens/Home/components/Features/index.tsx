@@ -1,4 +1,5 @@
-import { Grid, Image, Stack, Text, Title } from "@mantine/core";
+import { Grid, Image, Text, Title } from "@mantine/core";
+import { motion } from "framer-motion";
 
 import { Container } from "@/ui";
 
@@ -30,12 +31,20 @@ export function Features() {
         "Your security is our priority. Your payments are secure with us.",
     },
   ];
+
   return (
     <Container className="!py-[50px]">
       <Grid>
         {features.map(feature => (
-          <Grid.Col key={feature.id} span={4} p="xl">
-            <Stack gap="md">
+          <Grid.Col key={feature.id} span={4}>
+            <motion.div
+              className="!p-5 rounded-2xl"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0px 2px 4px 1px #e6ecf2 ",
+                radius: "10px",
+              }}
+            >
               <Image
                 src={feature.img}
                 alt={feature.title}
@@ -43,13 +52,13 @@ export function Features() {
                 w="50px"
                 fit="contain"
               />
-              <Title order={6} c="neutral-black.2">
+              <Title order={6} c="neutral-black.2" mt="sm">
                 {feature.title}
               </Title>
-              <Text c="neutral-black.6" fz="sm">
+              <Text c="neutral-black.6" fz="sm" mt="xs">
                 {feature.description}
               </Text>
-            </Stack>
+            </motion.div>
           </Grid.Col>
         ))}
       </Grid>
