@@ -12,7 +12,15 @@ export const HeroBanner: FC = () => {
   return (
     <Flex className="bg-neutral-white-100">
       <Container className="h-[540px] !pt-[140px] w-full flex justify-between">
-        <Flex direction="column" gap="sm" className="h-full justify-center">
+        <motion.div
+          initial={{ opacity: 0.5, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.5,
+            type: "spring",
+          }}
+          className="flex flex-col justify-center"
+        >
           <Title order={3} c="neutral-black.2">
             Fresh Arrivals Online
           </Title>
@@ -27,11 +35,16 @@ export const HeroBanner: FC = () => {
           >
             View Collection
           </Button>
-        </Flex>
+        </motion.div>
         <Flex justify="flex-end" align="flex-end">
           <motion.img
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
+            initial={{ scale: 0.8, y: 100, opacity: 0.5 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+              type: "spring",
+            }}
             src={heroBannerImage}
             alt="hero banner image"
           />
